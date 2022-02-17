@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bottom Bar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="container">
+            <div class="bar__inner">
+                <button class="bar__btn-info"></button>
+                <div class="bar__total-bet">
+                    <div class="bar__total-inner">
+                        <button  class="bar__total-minus" onclick="playSound('asset/sound/Button_Click.wav')">-</button>
+                        <div class="bar__total-content">
+                            <h5 class="bar__total-title">total bet</h5>
+                            <p class="bar__total-count">&yen;8800.10</p>
+                        </div>
+                        <button  class="bar__total-plus" onclick="playSound('asset/sound/Button_Click.wav')">+</button>
+                    </div>
+                </div>
+                <div class="bar__coin">
+                    <h5 class="bar__coin-title">coin</h5>
+                    <p  class="bar__coin-count">&yen;5689</p>
+                </div>
+                <div class="bar__display">
+                    <h2 class="bar__display-title">good luck!</h2>
+                </div>
+                <div class="bar__turbo">
+                    <input id="turbo" class="bar_turbo-checkbox" type="checkbox" onclick="playSound('asset/sound/Button_Click.wav')">
+                    <label for="turbo"></label>
+                </div>
+                <div class="bar__dropbox">
+                    <!-- <Ul class="bar__list"> -->
+                        <!-- <li> -->
+                            <button class="bar__dropbox-btn"></button>
+                            <ul class="bar__dropbox-items">
+                                <li class="bar__list-item bar__list-item-title">until feature</li>
+                                <li class="bar__list-item">25 spins</li>
+                                <li class="bar__list-item">20 spins</li>
+                                <li class="bar__list-item">15 spins</li>
+                                <li class="bar__list-item">10 spins</li>
+                                <li class="bar__list-item">5 spins </li>
+                            </ul>
+                        <!-- <li> -->
+                    <!-- </ul> -->
+                </div>
+                <div class="bar__play">
+                    <button class="bar__play-btn"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

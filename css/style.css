@@ -1,0 +1,501 @@
+html{
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::after,
+  *::before{
+    box-sizing: inherit;
+  }
+
+  body {
+    font-family: 'Noto Sans', sans-serif;
+    color: #fff;
+  }
+  
+  ul[class],
+  ol[class] {
+    padding: 0;
+  }
+  
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul[class],
+  ol[class],
+  li,
+  figure,
+  figcaption,
+  blockquote,
+  dl,
+  dd {
+    margin: 0;
+  }
+  
+  a {
+      text-decoration: none;
+    }
+    
+    ul[class] {
+      list-style: none;
+      text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+    margin: 0;
+  }
+
+  .container {
+      max-width: 1295px;
+      margin: 0 auto;
+  }
+
+  .wrapper {
+      background-image: url(../images/bg.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: transparent;
+      min-height: 112px;
+      padding: 300px 0;
+  }
+
+  .bar__inner {
+      display: flex;
+      align-items: center;
+  }
+
+  .bar__btn-info {
+      border: none;
+      width: 60px;
+      height: 60px;
+      position: relative;
+      cursor: pointer;
+      margin-right: 11px;
+      background-color: transparent;
+      background-image: url(../images/btn_info.png);
+      background-repeat: no-repeat;  
+      background-size: 100%;
+      top: 10px;
+      left: 0px;
+      z-index: 111;
+  }
+
+  .bar__btn-info::before{
+    content: "";
+    position: absolute;
+    background-image: url(../images/info_icon.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    top: 9px;
+    left: 23px;
+    width: 13px;
+    height: 45px;
+  }
+
+  .bar__btn-info:hover {
+    background-image: url(../images/btn_info-hover.png);
+  }
+  
+  .bar__btn-info:active {
+    background-image: url(../images/btn_info-click.png);
+  }
+  
+  .bar__total-bet {
+    background-image: url(../images/bg_totalbet.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 225px;
+    height: 90px;
+    background-size: 98%;
+    background-position-y: 26px;
+  }
+
+  .bar__total-inner {
+    display: flex;
+    padding-top: 35px;
+    line-height: 20px;
+  }
+
+  .bar__total-minus {
+      background-color: transparent;
+      background-image: url(../images/btn_minus.png);
+      background-repeat: no-repeat;
+      border: none;
+      outline: none;
+      top: -2px;
+      left: 4px;
+      width: 46px;
+      height: 50px;
+      background-size: 100%;
+      font-size: 0;
+      position: relative;
+      cursor: pointer;
+      margin-right: 25px;
+    }
+    
+    .bar__total-minus::before {
+      content: "";
+      background-image: url(../images/btn_minus-icon.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-color: transparent;
+      top: 19px;
+      left: 10px;
+      width: 25px;
+      height: 11px;
+      position: absolute;
+  }
+
+  .bar__total-minus:hover {
+    background-image: url(../images/btn_minus-hover.png);
+  }
+
+  .bar__total-minus:active {
+    background-image: url(../images/btn_minus-click.png);
+  }
+
+
+  .bar__total-plus {
+    background-image: url(../images/btn_plus.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 0;
+    width: 46px;
+    height: 50px;
+    top: -2px;
+    right: -14px;
+    background-size: 100%;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .bar__total-plus::before {
+    content: "";
+    background-image: url(../images/btn_plus-icon.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 25px;
+    height: 28px;
+    background-size: 100%;
+    position: absolute;
+    top: 11px;
+    right: 10px;
+  }
+
+  .bar__total-plus:hover {
+    background-image: url(../images/btn_plus-hover.png);
+  }
+
+  .bar__total-plus:active {
+    background-image: url(../images/btn_plus-click.png);
+  }
+
+  .bar__total-title {
+    font-size: 14px;
+    color: #ff6972;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .bar__total-count {
+      font-size: 21px;
+      font-weight: bold;
+      color: #ffd100;
+  }
+
+  .bar__coin {
+    background-image: url(../images/bg_coin.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 120px;
+    height: 84px;
+    background-size: 97%;
+    background-position:center 23px;
+    line-height: 20px;
+  }
+
+  .bar__coin-title {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 14px;
+    color: #ff6972;
+    text-transform: uppercase;
+  }
+
+  .bar__coin-count {
+    text-align: center;
+    font-size: 21px;
+    font-weight: bold;
+    color: #ffd100;
+  }
+
+  .bar__display {
+      background-image: url(../images/bg_display.png);
+      background-repeat: no-repeat;
+      background-color: transparent;
+      width: 480px;
+      height: 180px;
+      background-size: 100%;
+      background-position: center 45px;
+  }
+
+  .bar__display-title {
+      font-size: 60px;
+      font-weight: bold;
+      color: #ffd100;
+      text-align: center;
+      padding-top: 55px;
+      text-transform: uppercase;
+  }
+
+  .bar__turbo {
+      width: 85px;
+      background-image: url(../images/bg_checkbx-red.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      height: 100px;
+      background-position: center 32px;
+  }
+
+  .bar__turbo input {
+    display: none;
+    width: 80px;
+    height: 100px;
+    position: relative;
+  }
+ 
+
+  .bar__turbo input + label::before {
+    display: inline-block;
+    content: "";
+    background-image: url(../images/bg__check-btn.png);
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 100px;
+    background-size: 100%;
+    background-position: 2px 52px;
+    cursor: pointer;
+    position:absolute;
+  }
+  
+  .bar__turbo input:checked + label::before {
+    display: inline-block;
+    content: "";
+    background-image: url(../images/bg_checkbx-green.png);
+    background-repeat: no-repeat;
+    width: 82px;
+    height: 100px;
+    background-size: 100%;
+    background-position: 1px 34px;
+    cursor: pointer;
+    position:absolute;
+  }
+
+  .bar__turbo input:checked + label::after {
+    display: inline-block;
+    content: "";
+    background-image: url(../images/bg__check-btn-active.png);
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 100px;
+    background-size: 100%;
+    background-position: 3px 38px;
+    transition: all .2s;
+    cursor: pointer;
+    position:absolute;
+  }
+
+  .bar__dropbox-btn {
+    border: none;
+    padding: 0;
+    background-image: url(../images/btn_auto.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: 97%;
+    background-position: 5px 17px;
+    width: 215px;
+    height: 75px;
+    cursor: pointer;
+    position: relative;
+    z-index: 22;
+  }
+
+  .bar__dropbox-btn::before {
+    content: "";
+    background-image: url(../images/btn_auto-icon.png);
+    background-repeat: no-repeat;
+    width: 65px;
+    height: 24px;
+    background-size: 100%;
+    position: absolute;
+    top: 37px;
+    left: 30px;
+  }
+
+  .bar__dropbox-btn:hover {
+    background-image: url(../images/btn_auto-hover.png);
+  }
+  
+  .bar__dropbox {
+    position: relative;
+    display: inline-block;
+    z-index: 2222;
+  }
+
+  .bar__dropbox-items {
+    position: absolute;
+    top: -140px;
+    left: 11px;
+    width: 90%;
+    height: 250px;
+    background-image: url(../images/bg__auto.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  .bar__dropbox:hover .bar__dropbox-items{ 
+    visibility: visible;
+    opacity: 1;
+    transition: all 2s linear;
+  }
+
+  .bar__list-item:hover {
+    color: #fff;
+  }
+
+  .bar__list-item:active {
+    color: #f48a00;
+  }
+
+  .bar__list-item-title {
+    padding-top: 10px;
+    margin-left: 25px;
+    position: relative;
+  }
+
+  .bar__list-item-title::before {
+    content: "";
+    background-image: url(../images/icon_feature.png);
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    background-size: 85%;
+    position: absolute;
+    top: 11px;
+    left: -13px;
+  }
+  
+  .bar__list-item {
+    padding-left: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffd100;
+    text-transform: uppercase;
+  }
+
+  .bar__play {
+    position: relative;
+    top: -123px;
+    right: -117px;
+    z-index: 44444;
+  }
+
+    .bar__play-btn {
+      background-image: url(../images/bg_spin-btn.png);
+      background-repeat: no-repeat;
+      background-size: 95%;
+      width: 200px;
+      height: 190px;
+      top: 35px;
+      left: -212px;
+      background-color: transparent;
+      position: absolute;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+    }
+
+    .bar__play-btn:hover {
+      background-image: url(../images/bg_spin-btn-hover.png);
+    }
+
+    .bar__play-btn:hover::after {
+      content: "";
+      background-image: url(../images/btn_spin-play.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 67px;
+      height: 100px;
+      top: 56px;
+      left: 60px;
+      background-color: transparent;
+      position: absolute;
+      animation-name: none;
+    }
+
+    .bar__play-btn:active {
+      background-image: url(../images/bg_spin-btn-click.png);
+    }
+
+    .bar__play-btn::after {
+      content: "";
+      background-image: url(../images/btn_spin-arrows.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 100px;
+      height: 80px;
+      top: 53px;
+      left: 45px;
+      background-color: transparent;
+      position: absolute;
+      animation-name: cog;
+      animation-iteration-count: infinite;
+      animation-duration: 5s;
+      animation-timing-function: ease;
+    }
+
+    @keyframes cog {
+      from {
+        transform:rotate(0deg);
+      }
+      to {
+        transform:rotate(-360deg);
+      }
+    }
+    
+    .bar__play-btn:active::after {
+      content: "";
+      background-image: url(../images/btn_spin-stop.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 67px;
+      height: 100px;
+      top: 59px;
+      left: 60px;
+      background-color: transparent;
+      position: absolute;
+      animation-name: none;
+    }
+
+
+
+
